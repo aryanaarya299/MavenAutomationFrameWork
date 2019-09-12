@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ActiTime_RegressionSuite">
+<listeners>
+<listener class-name="generic.TestngListeners"></listener>
+</listeners>
+  <test thread-count="5" name="SmokeTestGroup">
+    <classes>
+      <class name="scripts.TestValidLogin"/>
+      <class name="scripts.TestInvalidLogin"/>
+      <class name="scripts.Demo"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

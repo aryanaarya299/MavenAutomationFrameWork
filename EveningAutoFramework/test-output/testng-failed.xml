@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ActiTime_RegressionSuite]">
+  <listeners>
+    <listener class-name="generic.TestngListeners"/>
+  </listeners>
+  <test thread-count="5" name="SmokeTestGroup(failed)">
+    <classes>
+      <class name="scripts.Demo">
+        <methods>
+          <include name="createUser"/>
+          <include name="deleteUser"/>
+        </methods>
+      </class> <!-- scripts.Demo -->
+      <class name="scripts.TestValidLogin">
+        <methods>
+          <include name="testValidLogin"/>
+          <include name="launchApplication"/>
+          <include name="closeApplication"/>
+        </methods>
+      </class> <!-- scripts.TestValidLogin -->
+    </classes>
+  </test> <!-- SmokeTestGroup(failed) -->
+</suite> <!-- Failed suite [ActiTime_RegressionSuite] -->

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="2" ignored="0" total="4" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[ActiTime_RegressionSuite --> started....]]>
+    </line>
+    <line>
+      <![CDATA[SmokeTestGroup -->  block is started....]]>
+    </line>
+    <line>
+      <![CDATA[testValidLogin --> test method is started....]]>
+    </line>
+    <line>
+      <![CDATA[testValidLogin --> test method is FAILED....]]>
+    </line>
+    <line>
+      <![CDATA[testInvalidLogin --> test method is started....]]>
+    </line>
+    <line>
+      <![CDATA[testInvalidLogin --> test method is PASS....]]>
+    </line>
+    <line>
+      <![CDATA[createUser --> test method is started....]]>
+    </line>
+    <line>
+      <![CDATA[createUser --> test method is FAILED....]]>
+    </line>
+    <line>
+      <![CDATA[deleteUser --> test method is SKIPPED....]]>
+    </line>
+    <line>
+      <![CDATA[SmokeTestGroup -->  block finished.....]]>
+    </line>
+    <line>
+      <![CDATA[ActiTime_RegressionSuite --> ended....]]>
+    </line>
+  </reporter-output>
+  <suite name="ActiTime_RegressionSuite" duration-ms="43743" started-at="2019-08-30T13:16:00Z" finished-at="2019-08-30T13:16:44Z">
+    <groups>
+    </groups>
+    <test name="SmokeTestGroup" duration-ms="43743" started-at="2019-08-30T13:16:00Z" finished-at="2019-08-30T13:16:44Z">
+      <class name="scripts.TestValidLogin">
+        <test-method status="PASS" signature="launchApplication()[pri:0, instance:scripts.TestValidLogin@6f7fd0e6]" name="launchApplication" is-config="true" duration-ms="11231" started-at="2019-08-30T13:16:00Z" finished-at="2019-08-30T13:16:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method status="FAIL" signature="testValidLogin()[pri:0, instance:scripts.TestValidLogin@6f7fd0e6]" name="testValidLogin" duration-ms="15034" started-at="2019-08-30T13:16:11Z" finished-at="2019-08-30T13:16:26Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for title to be "actiTIME - Enter Time-Track123". Current title: "actiTIME - Enter Time-Track" (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'HP', ip: '192.168.253.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\HPWORL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50989}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c654e79974dff3e931ec9e6a24167372]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be "actiTIME - Enter Time-Track123". Current title: "actiTIME - Enter Time-Track" (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'HP', ip: '192.168.253.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\HPWORL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50989}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c654e79974dff3e931ec9e6a24167372
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at scripts.TestValidLogin.testValidLogin(TestValidLogin.java:35)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+            <line>
+              <![CDATA[testValidLogin --> test method is started....]]>
+            </line>
+            <line>
+              <![CDATA[testValidLogin --> test method is FAILED....]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:scripts.TestValidLogin@6f7fd0e6]" name="closeApplication" is-config="true" duration-ms="1692" started-at="2019-08-30T13:16:26Z" finished-at="2019-08-30T13:16:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testValidLogin status=FAILURE method=TestValidLogin.testValidLogin()[pri:0, instance:scripts.TestValidLogin@6f7fd0e6] output=testValidLogin --> test method is started....]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- scripts.TestValidLogin -->
+      <class name="scripts.Demo">
+        <test-method status="FAIL" signature="createUser()[pri:0, instance:scripts.Demo@3e6fa38a]" name="createUser" duration-ms="18" started-at="2019-08-30T13:16:44Z" finished-at="2019-08-30T13:16:44Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Intentionally failed this createuser method. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Intentionally failed this createuser method. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at scripts.Demo.createUser(Demo.java:9)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[createUser --> test method is started....]]>
+            </line>
+            <line>
+              <![CDATA[createUser --> test method is FAILED....]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method status="SKIP" signature="deleteUser()[pri:0, instance:scripts.Demo@3e6fa38a]" name="deleteUser" duration-ms="0" started-at="2019-08-30T13:16:44Z" depends-on-methods="scripts.Demo.createUser" finished-at="2019-08-30T13:16:44Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Demo.deleteUser()[pri:0, instance:scripts.Demo@3e6fa38a] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Demo.deleteUser()[pri:0, instance:scripts.Demo@3e6fa38a] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+            <line>
+              <![CDATA[deleteUser --> test method is SKIPPED....]]>
+            </line>
+            <line>
+              <![CDATA[SmokeTestGroup -->  block finished.....]]>
+            </line>
+            <line>
+              <![CDATA[ActiTime_RegressionSuite --> ended....]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteUser -->
+      </class> <!-- scripts.Demo -->
+      <class name="scripts.TestInvalidLogin">
+        <test-method status="PASS" signature="launchApplication()[pri:0, instance:scripts.TestInvalidLogin@47c62251]" name="launchApplication" is-config="true" duration-ms="7498" started-at="2019-08-30T13:16:28Z" finished-at="2019-08-30T13:16:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method status="PASS" signature="testInvalidLogin()[pri:0, instance:scripts.TestInvalidLogin@47c62251]" name="testInvalidLogin" duration-ms="5933" started-at="2019-08-30T13:16:35Z" finished-at="2019-08-30T13:16:41Z">
+          <reporter-output>
+            <line>
+              <![CDATA[testInvalidLogin --> test method is started....]]>
+            </line>
+            <line>
+              <![CDATA[testInvalidLogin --> test method is PASS....]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:scripts.TestInvalidLogin@47c62251]" name="closeApplication" is-config="true" duration-ms="2193" started-at="2019-08-30T13:16:41Z" finished-at="2019-08-30T13:16:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testInvalidLogin status=SUCCESS method=TestInvalidLogin.testInvalidLogin()[pri:0, instance:scripts.TestInvalidLogin@47c62251] output=testInvalidLogin --> test method is started....]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- scripts.TestInvalidLogin -->
+    </test> <!-- SmokeTestGroup -->
+  </suite> <!-- ActiTime_RegressionSuite -->
+</testng-results>
